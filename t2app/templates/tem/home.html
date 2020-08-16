@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="POST" action="">
+    <h1>INDEX</h1>
+    <a href="{% url 'search' %}"> Find User</a><br><br>
+    {% csrf_token %}
+    <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name :</label>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="phoneno">Phone No.:</label>
+  <input type="integer" id="phoneno" name="phoneno"><br>
+
+    <label for="email">Email ID :</label>
+  <input type="text" id="email" name="email"><br>
+    <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+    <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>>
